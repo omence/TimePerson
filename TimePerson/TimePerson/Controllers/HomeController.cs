@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Linq;
+using System.IO;
 using TimePerson.Models;
 
 namespace TimePerson.Controllers
@@ -19,8 +21,7 @@ namespace TimePerson.Controllers
 
         public IActionResult Results(int beginYear, int endYear)
         {
-
-
+            return View(Models.TimePerson.GetPersons(beginYear, endYear));
         }
     }
 }
