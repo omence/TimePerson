@@ -29,24 +29,33 @@ namespace TimePerson.Models
             for (int i = 1; i < data.Length; i++)
             {
                 var fields = data[i].Split(',');
-                if (Convert.ToInt32(fields[0]) >= beginYear && Convert.ToInt32(fields[0]) <= endYear)
-                {
+                
                     timePerson.Add(new TimePerson
-                    {
-                        Year = Convert.ToInt32(fields[0]),
+                    {   
+
+                        Year = (fields[0] == "") ? 0 : Convert.ToInt32(fields[0]),
                         Honor = fields[1],
                         Name = fields[2],
                         Country = fields[3],
-                        BirthYear = Convert.ToInt32(fields[4]),
-                        DeathYear = Convert.ToInt32(fields[5]),
+                        BirthYear = (fields[4] == "") ? 0 : Convert.ToInt32(fields[4]),
+                        DeathYear = (fields[5] == "") ? 0 : Convert.ToInt32(fields[5]),
                         Title = fields[6],
                         Catagory = fields[7],
                         Context = fields[8],
                     });
-                }
+                
             }
-            return timePerson;
-        }
+            if (beginYear < endYear)
+            {
+                List<TimePerson> people = timePerson.Where(j => (j.Year >= beginYear) && (j.Year <= endYear)).ToList();
+                return people;
+            }
+            else
+            {
+                return timePerson;
+            }
+            
+        }   
 
     }
 
