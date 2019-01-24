@@ -14,6 +14,8 @@ The new lest of requested time persons is sent to the results page, where I use 
 
 The user can then return to the home page to conduct a new search if they choose to do so.
 
+Tools used, C#, ASP.NET Core, SystemIO and LinQ
+
 What does the program look like? (visual)
 ![image](https://github.com/omence/TimePerson/blob/master/Screenshot%20(10).png)
 ![image](https://github.com/omence/TimePerson/blob/master/Screenshot%20(11).png)
