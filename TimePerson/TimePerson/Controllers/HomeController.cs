@@ -7,7 +7,7 @@ namespace TimePerson.Controllers
 {
     public class HomeController : Controller
     {
-        [HttpGet]
+        
         public IActionResult Index()
         {
             return View();
@@ -19,6 +19,7 @@ namespace TimePerson.Controllers
             return RedirectToAction("Results", new { beginYear, endYear });
         }
 
+        [HttpGet]
         public IActionResult Results(int beginYear, int endYear)
         {
             return View(Models.TimePerson.GetPersons(beginYear, endYear));

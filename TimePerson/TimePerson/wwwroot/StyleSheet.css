@@ -1,0 +1,38 @@
+﻿html {
+    border: dotted;
+    height: 100%;
+}
+body {
+    background-color:azure;
+    
+    
+}
+
+h1 {
+    text-align:center;
+    font-size: 100px;
+}
+
+form{
+    margin-left: 33%;
+}
+
+table{
+    border:dashed;
+    border-color:black;
+    width: 100%;
+    color:red;
+
+}
+tr {
+    border: dashed;
+    border-color: black;
+}
+th {
+    border: dashed;
+    border-color: black;
+}
+td {
+    border: dashed;
+    border-color: black;
+}
