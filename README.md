@@ -2,7 +2,7 @@
 
 What is the purpose of the program?
 
-The purpose of the app is to be able to view information about Time's man of the year.
+The purpose of the app is to be able to view information about Time's person of the year based on a range of years of yur choice.
 
 How do I run the program?
 
