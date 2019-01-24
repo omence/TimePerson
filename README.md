@@ -10,7 +10,7 @@ When you get to the home page, you enter a begin year and an end year and then c
 
 The applications takes in a csv file which includes all the people of the year, I created a class based on the properties in the csv file.  When the user inputs year range, the app will loop through a list I created of instances of the Time Person class, and use LinQ to filter the results to only include time persons within the year range provided by the user.
 
-The new lest of requested time persons is sent to the results page, where I use a loop to loop through the list and render the results in the form of a tabe.
+The new lest of requested time persons is sent to the results page, where I use a loop to loop through the list and render the results in the form of a table.
 
 The user can then return to the home page to conduct a new search if they choose to do so.
 
